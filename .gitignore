@@ -1,0 +1,8 @@
+# Ignore model files
+models/
+
+# Ignore saved images and videos
+saved_human_frame/
+
+# Ignore saved ready model
+saved_model/
