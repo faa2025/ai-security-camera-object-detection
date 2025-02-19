@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 from object_detection.utils import visualization_utils as viz_utils
 from object_detection.utils import label_map_util
-from obj_detect import load_model  # Import model functions
+from object_detection.create_obj_model import load_model  # Import model functions
 from datetime import datetime
 import time
 import threading
