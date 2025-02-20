@@ -41,4 +41,5 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 
 # Screenshots
 
+![human_detected_2025-02-20_15-28-15](https://github.com/user-attachments/assets/6009520e-faa7-476e-a455-916dbaffd204)
 
