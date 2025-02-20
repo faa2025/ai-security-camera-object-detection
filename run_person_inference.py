@@ -86,6 +86,9 @@ class ObjectDetection:
                 line_thickness=8)
             
             timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            # Ensure the directory exists
+            os.makedirs('recorded_media/saved_human_frame', exist_ok=True)
+            os.makedirs('recorded_media/saved_human_clip', exist_ok=True)
             cv2.putText(frame, f"Frame {timestamp}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
             cv2.imwrite(f"recorded_media/saved_human_frame/human_detected_{timestamp}.jpg", frame)
             print(f"Human detected! Frame {timestamp} saved.")
@@ -180,7 +183,7 @@ if __name__ == "__main__":
     user_name = os.environ["USER"] # Get the username from the environment variables
     model_path = f"/home/{user_name}/object_detection/saved_model" # Path to created model
     label_path = './models/research/object_detection/data/mscoco_label_map.pbtxt' # cloned https://github.com/tensorflow/models repo path
-    youtube_url = "https://www.youtube.com/watch?v=KSsfLxP-A9g" # Replace with your own YouTube URL
+    youtube_url = "https://www.youtube.com/watch?v=80MaYh4ksQk" # Replace with your own YouTube URL
     notification_url = "http://127.0.0.1:8080/sendHumanDetectionEmail"
     # Create an instance of the ObjectDetection class
     detector = ObjectDetection(model_path, label_path, youtube_url, notification_url)

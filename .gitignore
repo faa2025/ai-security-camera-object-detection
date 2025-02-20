@@ -2,7 +2,7 @@
 models/
 
 # Ignore saved images and videos
-saved_human_frame/*
+recorded_media/*
 
 # Ignore saved ready model
 saved_model/*

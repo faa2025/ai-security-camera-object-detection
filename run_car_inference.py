@@ -86,6 +86,9 @@ class ObjectDetection:
                 line_thickness=8)
             
             timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            # Ensure the directory exists
+            os.makedirs('recorded_media/saved_car_frame', exist_ok=True)
+            os.makedirs('recorded_media/saved_car_clip', exist_ok=True)
             cv2.putText(frame, f"Frame {timestamp}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
             cv2.imwrite(f"recorded_media/saved_car_frame/car_detected_{timestamp}.jpg", frame)
             print(f"car detected! Frame {timestamp} saved.")
