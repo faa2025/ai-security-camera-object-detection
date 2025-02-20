@@ -28,6 +28,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   ## Technical requirements and recommendations:
   - Windows 10 or higher
   - NVIDIA GPU
+  - Latest Nvidia drivers https://www.nvidia.com/en-us/drivers/
 
 # Developer guide
  - Run `create_obj_model.py` to create the model. The model can be chosen from a list of available models. The model will be saved under `saved_model` folder.
