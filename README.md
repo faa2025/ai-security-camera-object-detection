@@ -39,7 +39,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   5.  Restart WSL
 
 
-# Screenshots
+# Example output
 
 ![human_detected_2025-02-20_15-28-15](https://github.com/user-attachments/assets/6009520e-faa7-476e-a455-916dbaffd204)
 
