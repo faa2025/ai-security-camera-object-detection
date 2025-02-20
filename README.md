@@ -13,13 +13,15 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 
 # Installation process
 
+
+
 # Developer guide
 
 # 
 
   # Libraries
   - Pretrained models library [(https://github.com/tensorflow/models)]
-  - Virtual enviroment venv
+  - Virtual environment venv
 
 
 
