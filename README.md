@@ -25,7 +25,8 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   - Run `pip install requirements.txt` in the virtual environment.
   - Clone at the root level of the project: Pretrained models library (https://github.com/tensorflow/models) & install the Object Detection API accroding to the instructions at https://www.tensorflow.org/hub/tutorials/tf2_object_detection#visualization_tools
  
-  ## Technical requirements:
+  ## Technical requirements and recommendations:
+  - Windows 10 or higher
   - NVIDIA GPU
 
 # Developer guide
