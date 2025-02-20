@@ -6,3 +6,9 @@ saved_human_frame/*
 
 # Ignore saved ready model
 saved_model/*
+
+# Ignore recorded media
+recorded_media/*
+
+# .env
+.env
