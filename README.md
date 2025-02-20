@@ -3,7 +3,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 
 # Creators
 - [Henein Roda](https://github.com/hxrda) (henein.roda@gmail.com)
-- [Jesse Nevalainen] (https://github.com/Suppiluliumas) (nevalainen.jesse92@gmail.com)
+- [Jesse Nevalainen](https://github.com/Suppiluliumas) (nevalainen.jesse92@gmail.com)
 - [Juslin Jukka](https://github.com/jusju) (jukka.juslin@haaga-helia.fi)
 
 
