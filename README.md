@@ -23,13 +23,16 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   
   ## Libraries
   - Run `pip install requirements.txt` in the virtual environment.
-  - Clone at the root level of the project: Pretrained models library [(https://github.com/tensorflow/models)] & install the Object Detection API accroding to the instructions at https://www.tensorflow.org/hub/tutorials/tf2_object_detection#visualization_tools
+  - Clone at the root level of the project: Pretrained models library (https://github.com/tensorflow/models) & install the Object Detection API accroding to the instructions at https://www.tensorflow.org/hub/tutorials/tf2_object_detection#visualization_tools
  
-## Technical requirements:
-- NVIDIA GPU
+  ## Technical requirements:
+  - NVIDIA GPU
 
 # Developer guide
- - 
+ - Run `create_obj_model.py` to create the model. The model can be chosen from a list of available models. The model will be saved under `saved_model` folder.
+ - Schedule the shell script `daylight_monitor.sh` with crontab (instructions included in the script) to run person (and optionally car) inference scripts.
+ - If the Spring Boot application is running on localhost:8080, configure network settings to allow WSL to communicate with the Windows host and port 8080.
+   - add instructions 
 
 
 # Screenshots
