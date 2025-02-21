@@ -14,7 +14,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 # Installation process
 
 - On Windows, install Windows Subsystem for Linux (WSL). Instructions at https://learn.microsoft.com/en-us/windows/wsl/install
-- Clone the project: https://github.com/faa2025/ai-security-camera-object-detection
+- Clone the project inside a folder named `"object_detection"` (refer to the project structure): https://github.com/faa2025/ai-security-camera-object-detection
 - Install virtual environment in WSL `pip install virtualenv`
 - Run the virtual environment `source venv/bin/activate`
 - Install latest Python version inside the virtual environment (venv)
