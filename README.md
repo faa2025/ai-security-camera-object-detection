@@ -39,7 +39,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   3.  Open WSL settings and network tab select network mirrored, enable localhost forwarding, enable host address loop.
   4.  Shutdown WSL in admin powershell using command `wsl --shutdown`
   5.  Restart WSL
- - The list of class identification numbers for object detection can be found at https://tech.amikelive.com/node-718/what-object-categories-labels-are-in-coco-dataset/  
+ - The list of class identification numbers used in object detection can be found at https://tech.amikelive.com/node-718/what-object-categories-labels-are-in-coco-dataset/  
 
 
 # Example output
