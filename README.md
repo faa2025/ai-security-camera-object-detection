@@ -33,12 +33,13 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 # Developer guide
  - Run `create_obj_model.py` to create the model. The model can be chosen from a list of available models. The model will be saved under `saved_model` folder.
  - Schedule the shell script `daylight_monitor.sh` with crontab (instructions included in the script) to run person (and optionally car) inference scripts.
- - Spring Boot application, which can be found in the backend folder of the camera repository. If the Spring Boot application is running on localhost:8080, configure network settings to allow WSL to communicate with the Windows host and port 8080.
+ - Run the Spring Boot application, which can be found in the backend folder of the camera repository. If the Spring Boot application is running on localhost:8080, configure network settings to allow WSL to communicate with the Windows host and port 8080.
   1.  In admin powershell run `New-NetFirewallHyperVRule -Name "MyWebServer" -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 8080`
   2.  In Windows firewall go to advanced settings, inbound rules, new rule, port, set specific local ports 8080, select allow connection then next, accept defaults then next, name like example "WSL" and finish.
   3.  Open WSL settings and network tab select network mirrored, enable localhost forwarding, enable host address loop.
   4.  Shutdown WSL in admin powershell using command `wsl --shutdown`
   5.  Restart WSL
+ - The list of class identification numbers for object detection can be found at https://tech.amikelive.com/node-718/what-object-categories-labels-are-in-coco-dataset/  
 
 
 # Example output
