@@ -4,8 +4,8 @@
 TEST_MODE="false"
 
 # Path to the Python scripts to trigger
-SCRIPT_TO_RUN_1="$HOME/object_detection/run_person_inference.py"
-# SCRIPT_TO_RUN_2="$HOME/object_detection/run_car_inference.py"  # Uncomment to enable car detection
+SCRIPT_TO_RUN_1="$HOME/ai-security-camera-object-detection/run_person_inference.py"
+# SCRIPT_TO_RUN_2="$HOME/ai-security-camera-object-detection/run_car_inference.py"  # Uncomment to enable car detection
 
 if [[ "$TEST_MODE" == "true" ]]; then
     # If true and script is not running, start person detection
@@ -49,7 +49,7 @@ fi
 # Open crontab editor:
     # crontab -e 
 # Add the following line to the end of the file (either the first or the second one):
-    # 0 * * * * bash $HOME/object_detection/schedule_scripts/test_trigger.sh
-    # 0 * * * * bash $HOME/object_detection/schedule_scripts/test_trigger.sh >> $HOME/object_detection/schedule_scripts/daytest_trigger.sh.log 2>&1
+    # 0 * * * * bash $HOME/ai-security-camera-object-detection/schedule_scripts/test_trigger.sh
+    # 0 * * * * bash $HOME/ai-security-camera-object-detection/schedule_scripts/test_trigger.sh >> $HOME/ai-security-camera-object-detection/schedule_scripts/daytest_trigger.sh.log 2>&1
 # Verify scheduled job:
     # crontab -l
