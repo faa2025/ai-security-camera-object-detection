@@ -23,6 +23,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   
   ## Libraries
   - Clone at the root level of the project: Pretrained models library (https://github.com/tensorflow/models) & install the Object Detection API accroding to the instructions at https://www.tensorflow.org/hub/tutorials/tf2_object_detection#visualization_tools
+  - Install yt_dlp (https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#installation)
   - Run `pip install -r requirements.txt` in the virtual environment.
  
   ## Technical requirements and recommendations:
