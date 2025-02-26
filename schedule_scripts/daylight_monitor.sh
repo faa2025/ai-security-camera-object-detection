@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# This script triggers "run_person_inference.py" based on daylight status.
+# This script triggers "run_person_inference.py" (and optionally "run_car_inderence.py") based on daylight status.
 # Daylight status is fetched from the Spring Boot app.
 # If car inference is wanted also, uncomment those sections in the code.
 
 # API Endpoint of your Spring Boot application
-API_URL="http://127.0.0.1:8080/api/daylight"  # Replace with actual backend URL if needed
+API_URL="http://127.0.0.1:8080/api/daylight"  # Replace with final deployed backend url
 
 # Paths to the Python scripts to run
 SCRIPT_TO_RUN_1="$HOME/ai-security-camera-object-detection/run_person_inference.py"
@@ -56,8 +56,8 @@ fi
 # Open crontab editor:
     # crontab -e 
 # Add the following line to the end of the file (either the first or the second one):
-    # 0 * * * * bash $HOME/object_detection/schedule_scripts/daylight_monitor.sh
-    # 0 * * * * bash $HOME/object_detection/schedule_scripts/daylight_monitor.sh >> $HOME/object_detection/schedule_scripts/daylight_monitor.log 2>&1
+    # 0 * * * * bash $HOME/ai-security-camera-object-detection/schedule_scripts/daylight_monitor.sh
+    # 0 * * * * bash $HOME/ai-security-camera-object-detection/schedule_scripts/daylight_monitor.sh >> $HOME/ai-security-camera-object-detection/schedule_scripts/daylight_monitor.log 2>&1
 # Verify scheduled job:
     # crontab -l
 
