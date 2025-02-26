@@ -181,7 +181,7 @@ class ObjectDetection:
 
 if __name__ == "__main__":
     user_name = os.environ["USER"] # Get the username from the environment variables
-    model_path = f"/home/{user_name}/ai-security-camera-object-detection/saved_model" # Path to created model
+    model_path = f"/home/{user_name}/object_detection/ai-security-camera-object-detection/saved_model" # Path to created model
     label_path = './models/research/object_detection/data/mscoco_label_map.pbtxt' # cloned https://github.com/tensorflow/models repo path
     youtube_url = "https://www.youtube.com/watch?v=80MaYh4ksQk" # Replace with your own YouTube URL
     notification_url = "http://127.0.0.1:8080/sendHumanDetectionEmail"
