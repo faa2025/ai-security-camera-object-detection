@@ -8,8 +8,9 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 
 
 # Project structure
+![Tree](https://github.com/user-attachments/assets/a3a1585e-462b-4cc6-84b0-db7e7f88ac21)
 
-<img width="126" alt="File_tree" src="https://github.com/user-attachments/assets/31049624-ab0c-49af-b6c4-493fb9342df4" />
+
 
 # Installation process
 
