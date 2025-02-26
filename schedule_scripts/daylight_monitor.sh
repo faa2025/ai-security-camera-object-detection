@@ -8,8 +8,8 @@
 API_URL="http://127.0.0.1:8080/api/daylight"  # Replace with actual backend URL if needed
 
 # Paths to the Python scripts to run
-SCRIPT_TO_RUN_1="$HOME/object_detection/run_person_inference.py"
-# SCRIPT_TO_RUN_2="$HOME/object_detection/run_car_inference.py"  # Uncomment to enable car detection
+SCRIPT_TO_RUN_1="$HOME/ai-security-camera-object-detection/run_person_inference.py"
+# SCRIPT_TO_RUN_2="$HOME/ai-security-camera-object-detection/run_car_inference.py"  # Uncomment to enable car detection
 
 # Check API response
 response=$(curl -s "$API_URL")
