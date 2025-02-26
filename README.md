@@ -14,16 +14,16 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 # Installation process
 
 - On Windows, install Windows Subsystem for Linux (WSL). Instructions at https://learn.microsoft.com/en-us/windows/wsl/install
-- Clone the project inside a folder named `"object_detection"` (refer to the project structure above): https://github.com/faa2025/ai-security-camera-object-detection
-- Install virtual environment in WSL `pip install virtualenv`
+- Clone the project inside a folder named `"object_detection"` inside subsystem (refer to the project structure above): https://github.com/faa2025/ai-security-camera-object-detection
+- Install virtual environment in WSL to project folder `pip install virtualenv` if it doesnt work try `pipx install virtualenv` and try again
 - Run the virtual environment `source venv/bin/activate`
 - Install latest Python version inside the virtual environment (venv)
 - Install Tensorflow 2 in the virtual environment. Instructions at https://www.tensorflow.org/install
 - Install required libraries
   
   ## Libraries
-  - Run `pip install requirements.txt` in the virtual environment.
   - Clone at the root level of the project: Pretrained models library (https://github.com/tensorflow/models) & install the Object Detection API accroding to the instructions at https://www.tensorflow.org/hub/tutorials/tf2_object_detection#visualization_tools
+  - Run `pip install requirements.txt` in the virtual environment.
  
   ## Technical requirements and recommendations:
   - Windows 10 or higher
