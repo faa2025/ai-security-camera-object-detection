@@ -207,7 +207,6 @@ nvidia-nccl-cu12==2.21.5
 nvidia-nvjitlink-cu12==12.4.127
 nvidia-nvtx-cu12==12.4.127
 oauth2client==4.1.3
-object_detection @ file:///./models/research
 objsize==0.7.1
 openai==1.61.1
 opencv-python==4.11.0.86
