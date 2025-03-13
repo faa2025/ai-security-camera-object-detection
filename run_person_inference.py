@@ -150,6 +150,7 @@ class ObjectDetection:
             # Process the frame if at least 1 second has passed since the last capture
             if current_time - last_capture_time >= 1:
                 last_capture_time = current_time
+                frame = cv2.resize(frame, (640, 480))
                 self.process_frame(frame)
                 del frame
             # Print a message if no detection has been made for 10 seconds
@@ -162,8 +163,8 @@ class ObjectDetection:
         stream_url = self.get_livestream_url()
         # Initialize the video capture object with the livestream URL
         self.cap = cv2.VideoCapture(stream_url)
-        # Set the buffer size for the video capture object to 2 frames
-        self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 2)
+        # Set the buffer size for the video capture object to 1 frames
+        self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
         # Create and start a new thread to capture frames using the capture_frames method
         capture_thread = threading.Thread(target=self.capture_frames)
         capture_thread.start()
