@@ -18,7 +18,7 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 - Clone the project inside the user's home directory inside the subsystem (refer to the project structure above): https://github.com/faa2025/ai-security-camera-object-detection
 - Install pip `sudo apt install python3-pip` or pipx `sudo apt install pipx` if you do not have them
 - Install virtual environment in WSL to project folder `pip install virtualenv` if it doesnt work try `pipx install virtualenv` and try again
-- Creat a virtual environment `python -m venv venv`
+- Create a virtual environment `python -m venv venv`
 - Run the virtual environment `source venv/bin/activate`
 - Install latest Python version inside the virtual environment (venv)
 - Install Tensorflow 2 in the virtual environment. Instructions at https://www.tensorflow.org/install
