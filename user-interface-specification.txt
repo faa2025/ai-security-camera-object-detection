@@ -4,4 +4,6 @@ User interface to monitor AI security camera observations
 - User interface might be possible to do with Java
 - User interface should have observations for each day separate by if nothing else HTML HR tag after HR should immediately be weekday and date like Wednesday 26.3.2023 that should be in H1 or H3
 - In each day section should be thumbnails in a grid that would be if possible mobile friendly
-- If you click thumbnail you get 
+- If you click thumbnail you get the picture in highest resolution
+- Next to each picture is time when it was taken
+
