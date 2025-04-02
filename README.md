@@ -34,8 +34,11 @@ A computer vision model for detecting persons and vehicles in real-time using Te
   - Latest Nvidia drivers https://www.nvidia.com/en-us/drivers/
 
 # Developer guide
- - Run `create_obj_model.py` to create the model. The model can be chosen from a list of available models. The model will be saved under `saved_model` folder.
- - Run python run_person_inference.py
+ - Run `pyhton create_obj_model.py` to create the model. The model can be chosen from a list of available models. The model will be saved under `saved_model` folder.
+ - For Chrome install an extension Get cookies.txt LOCALLY
+ - Navigate to your Youtube page and export cookies using the extension
+ - Transfer the cookies.txt to the root folder of the project
+ - Run `python run_person_inference.py`
 
  - Run the Spring Boot application, which can be found in the backend folder of the camera repository. If the Spring Boot application is running on localhost:8080, configure network settings to allow WSL to communicate with the Windows host and port 8080.
   1.  In admin powershell run `New-NetFirewallHyperVRule -Name "MyWebServer" -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 8080`
