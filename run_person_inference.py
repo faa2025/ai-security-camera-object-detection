@@ -37,7 +37,7 @@ class ObjectDetection:
         """
         Get the livestream URL from the YouTube URL using yt_dlp.
         """
-        ydl_opts = {'quiet': True, 'format': 'bestvideo[height<=720]'}
+        ydl_opts = {'quiet': True, 'format': 'best', 'cookiefile': 'cookies.txt'}
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(self.youtube_url, download=False)
             # Print the frames per second (FPS) of the video stream
