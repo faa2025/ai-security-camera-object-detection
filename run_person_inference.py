@@ -73,7 +73,11 @@ class ObjectDetection:
         """
         Process a single frame to detect humans, send notifications, and save detected frames and video clips.
         """
+        start_time = time.time()
         detected, boxes, classes, scores = self.detect_human(frame)
+        inference_time = time.time() - start_time
+        print(f"Inference time: {inference_time:.2f} seconds")
+
         if detected:
             threading.Thread(target=self.notify_human_detection, daemon=True).start()
             viz_utils.visualize_boxes_and_labels_on_image_array(
@@ -99,8 +103,8 @@ class ObjectDetection:
 
             # Frames per second from the video stream
             fps = 30
-            # Number of frames to capture for the video clip so duration is 10 seconds
-            num_frames = fps * 10 
+            # Number of frames to capture for the video clip so duration is 5 seconds
+            num_frames = fps * 5
             # Intialize frame count
             frame_count = 0
             # Capture frames until the required number of frames is reached
@@ -118,7 +122,7 @@ class ObjectDetection:
                 del frame
             # Release the video writer
             video_writer.release()
-            print(f"10-second video clip {timestamp} saved.")
+            print(f"5-second video clip {timestamp} saved.")
 
     def capture_frames(self):
         """
@@ -129,7 +133,7 @@ class ObjectDetection:
         # Record the time of the last human detection
         last_detection_time = time.time()
         # Number of frames to skip before processing the next frame to save memory
-        frame_skip = 10
+        frame_skip = 30
         # Initialize frame counter
         frame_count = 0
         # Loop to capture frames as long as the video object is open
@@ -150,9 +154,9 @@ class ObjectDetection:
             # Process the frame if at least 1 second has passed since the last capture
             if current_time - last_capture_time >= 1:
                 last_capture_time = current_time
-                frame = cv2.resize(frame, (640, 480))
                 self.process_frame(frame)
                 del frame
+
             # Print a message if no detection has been made for 10 seconds
             if time.time() - last_detection_time >= 10:
                 print("Nothing detected")
@@ -184,8 +188,8 @@ if __name__ == "__main__":
     user_name = os.environ["USER"] # Get the username from the environment variables
     model_path = f"/home/{user_name}/object_detection/ai-security-camera-object-detection/saved_model" # Path to created model
     label_path = './models/research/object_detection/data/mscoco_label_map.pbtxt' # cloned https://github.com/tensorflow/models repo path
-    youtube_url = "https://www.youtube.com/watch?v=80MaYh4ksQk" # Replace with your own YouTube URL
-    notification_url = "http://127.0.0.1:8080/sendHumanDetectionEmail"
+    youtube_url = "https://www.youtube.com/watch?v=KSsfLxP-A9g" # Replace with your own YouTube URL
+    notification_url = "http://localhost:8080/sendHumanDetectionEmail"
     # Create an instance of the ObjectDetection class
     detector = ObjectDetection(model_path, label_path, youtube_url, notification_url)
     # Start the object detection process
