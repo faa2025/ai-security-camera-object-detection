@@ -55,3 +55,5 @@ A computer vision model for detecting persons and vehicles in real-time using Te
 
 ![car_detected_2025-02-20_15-37-36](https://github.com/user-attachments/assets/12d11f22-9c29-4d9d-b787-5ab672a025f2)
 
+![DEMO](polina-ezgif.com-video-to-gif-converter.gif)
+
