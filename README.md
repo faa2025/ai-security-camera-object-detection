@@ -54,6 +54,14 @@ This project performs real-time **human detection** using a pre-trained TensorFl
  - Navigate to your Youtube page and export cookies using the extension
  - Transfer the cookies.txt to the root folder of the project
  - Run `python run_person_inference.py`
+   
+ - Connect remote WSL to Visual Studio Code(VS-Code):
+   1. open VS-Code and go to Extension view.
+   3. Search and install Remote - WSL extension by microsoft.
+   4. To open your WSL project in VS-Code: In your WSL terminal navigate to your project folder 
+      "cd /object_detection/ai-security-camera-object-detection$". When you are inside the 
+      project type "code" and enter. It will open the VS-Code and when you click "Open Folder" 
+      option in side bar in VS-Code you can search and click your project folder.
 
  - Run the Spring Boot application, which can be found in the backend folder of the camera repository. If the Spring Boot application is running on localhost:8080, configure network settings to allow WSL to communicate with the Windows host and port 8080.
   1.  In admin powershell run `New-NetFirewallHyperVRule -Name "MyWebServer" -DisplayName "My Web Server" -Direction Inbound -VMCreatorId '{40E0AC32-46A5-438A-A0B2-2B479E8F2E90}' -Protocol TCP -LocalPorts 8080`
