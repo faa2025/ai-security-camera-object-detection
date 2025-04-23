@@ -1,6 +1,21 @@
 # ai-security-camera-object-detection
 A computer vision model for detecting persons and vehicles in real-time using TensorFlow/keras/CNN. Designed for surveillance, traffic monitoring and security applications.
 
+This project performs real-time **human detection** using a pre-trained TensorFlow object detection model. It captures frames from the stream, detects people in the scene, and saves both annotated images and short video clips when humans are detected. Optional notifications can be triggered for each detection event.
+
+---
+
+## 🚀 Features
+
+- 🎯 Real-time object detection with TensorFlow
+- 📹 Automatically processes a YouTube livestream
+- 🔲 Draws bounding boxes around detected people
+- 💾 Saves snapshot frames and 5-second video clips when a person is detected
+- 🔔 Sends notifications to a specified URL on detection
+- 📁 Organized storage of captured media
+
+---
+
 # Creators
 - [Henein Roda](https://github.com/hxrda) (henein.roda@gmail.com)
 - [Jesse Nevalainen](https://github.com/Suppiluliumas) (nevalainen.jesse92@gmail.com)
